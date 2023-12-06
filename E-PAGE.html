@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fancy Store</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Fancy Store</h1>
+        </header>
+
+        <section class="main-content">
+            <div class="product">
+                <img src="product1.jpg" alt="children dresses">
+                <div class="product-details">
+                    <h2>kids wear</h2>
+                    <p class="description">shirts ,
+                    dipers,
+                    pants.</p>
+                    <p class="price">1449.99</p>
+                    <button onclick="addToCart(1)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="product2.jpg" alt="mens dresses">
+                <div class="product-details">
+                    <h2>teenagers</h2>
+                    <p class="description">shirts,
+                    pants,
+                    inner wears,
+                    bunieans.</p>
+                    <p class="price">1229.99</p>
+                    <button onclick="addToCart(2)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="cart-container">
+            <button id="viewCartBtn" onclick="viewCart()">View Cart</button>
+            <div id="cartItems" class="cart-items"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
